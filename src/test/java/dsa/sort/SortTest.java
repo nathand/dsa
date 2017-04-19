@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.junit.Assert;
 import java.util.List;
 import java.util.ArrayList;
+import java.lang.UnsupportedOperationException;
 
 public class SortTest {
 
@@ -24,4 +25,16 @@ public class SortTest {
     Assert.assertTrue(sorted);
   }
 
+  @Test(expected = UnsupportedOperationException.class)
+  public void testQuicksortException() {
+    Sort<Integer> mySort = new Quicksort<Integer>();
+    Integer[] array = {1, 2, 3};
+    mySort.sort(array);
+  }
+
+  @Test
+  public void testBubblesort() throws Exception {
+    Integer[] input = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+    
+  }
 }

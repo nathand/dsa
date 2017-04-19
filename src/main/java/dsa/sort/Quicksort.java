@@ -2,6 +2,7 @@ package dsa.sort;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.lang.UnsupportedOperationException;
 
 public class Quicksort<E extends Comparable> implements Sort<E> {
 
@@ -28,6 +29,6 @@ public class Quicksort<E extends Comparable> implements Sort<E> {
 
   @Override
   public E[] sort(E[] list) {
-    return null;
+    throw new UnsupportedOperationException("Not supported for arrays");
   }
 }
