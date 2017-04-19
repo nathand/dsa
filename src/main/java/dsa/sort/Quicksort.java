@@ -7,7 +7,7 @@ public class Quicksort<E> implements Sort<E> {
 
   @Override
   public List<E> sort(List<E> list) {
-    return new ArrayList<E>();
+    return list;
   }
 
   @Override
