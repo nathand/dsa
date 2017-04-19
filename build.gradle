@@ -15,6 +15,12 @@ jar {
     baseName = 'datastructures-and-algorithms'
     version =  '0.1.0'
 }
+
+test {
+  reports {
+    html.enabled = true
+  }
+}
 // end::jar[]
 
 // tag::dependencies[]
